@@ -6,7 +6,7 @@ Description: Alexander Rocco Corporation, which has hired you as a security test
 
 Based on this information, write a one-page report for Ms. Petrelli describing some port-scanning tools that might be useful to your company. The report should include available commercial tools and their costs.
 
-# 🛡️ Automated External Attack Surface Validation & Control Gap Analysis
+# Automated External Attack Surface Validation & Control Gap Analysis
 
 **Repository Status:** Complete (Scanning, Data Wrangling, Risk Reporting, Remediation Planning)
 

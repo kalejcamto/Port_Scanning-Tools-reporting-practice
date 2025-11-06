@@ -6,8 +6,55 @@ Description: Alexander Rocco Corporation, which has hired you as a security test
 
 Based on this information, write a one-page report for Ms. Petrelli describing some port-scanning tools that might be useful to your company. The report should include available commercial tools and their costs.
 
+# 🛡️ Automated External Attack Surface Validation & Control Gap Analysis
 
+**Repository Status:** Complete (Scanning, Data Wrangling, Risk Reporting, Remediation Planning)
+
+---
+
+## 💡 Executive Summary
+
+This project demonstrates a programmatic approach to **Continuous Control Monitoring (CCM)** by validating an organization's external security posture. It addresses the critical operational risk of **asset drift** and unauthorized service exposure by automating the discovery of internet-facing vulnerabilities.
+
+The solution uses **Nmap** integrated with custom **Python scripting** to transform raw scan data into structured, actionable **Risk Reports**, enabling immediate detection of security control failures and ensuring audit readiness for network boundaries.
+
+**Key Governance/Risk Skills Demonstrated:**
+* **Continuous Control Monitoring (CCM)**
+* **Risk Reporting** and **Prioritization**
+* **Data Wrangling** for security telemetry
+* **Asset Visibility** and **Attack Surface Management**
+
+---
+
+## Project Scenario & Goal
+
+**Scenario:** Conduct a simulated external audit to verify a critical **Preventative Control** (PC-05: Deny all public access to high-risk ports across the internet-facing IP inventory.
+
+**Goal:** Provide automated, repeatable proof that the external network security controls (e.g., firewall, AWS Security Groups) are effectively enforced, and reduce time-to-discovery of unauthorized open ports from weeks to minutes.
+
+---
+
+## 📂 Project Phases & Navigation
+
+The project follows a structured process to convert raw technical data into meaningful risk insights:
+
+| Folder | Phase | Goal/Focus |
+| :--- | :--- | :--- |
+| **1 Automation_Engine** | **Scanning & Collection** | Contains the core `nmap` configuration and **Python/Bash scripts** used to execute timed scans against target IP ranges (Input). |
+| **2 Data_Wrangling** | **Data Structuring** | Scripts dedicated to parsing the Nmap XML output, cleaning the data, and transforming it into structured CSV/JSON, ready for analysis. |
+| **3_Risk_Analysis_and_Reporting** | **Insight Generation** | Contains the final **Risk Report Template** and scoring logic. Categorizes findings into Risk Levels (Critical, High, Medium) based on port, service, and protocol discovered. |
+| **4_Remediation_Plan_Example** | **Mitigation & Closure** | Simple documentation detailing suggested mitigation steps (immediate removal of public Security Group rules) and the process for validating remediation closure. |
+
+---
+
+## Key Technical Details
+
+* **Primary Tool:** Nmap (for port and service discovery)
+* **Language:** Python 3 (for automation and data wrangling)
+* **Key Output:** Structured CSV/JSON file with identified open ports mapped to a calculated **Risk Score**.
 ## **Internal Research Report: Recommended Port Scanning Tools**
+
+----
 
 **To:** Gloria Petrelli, Manager, IT Department
 **From:** Security Tester
